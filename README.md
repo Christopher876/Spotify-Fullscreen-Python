@@ -6,6 +6,9 @@ I have always wanted a way in which Spotify would cover the entire screen with t
 Anyone that stumbles upon my project, I hope you enjoy it as much as much I have enjoyed trying to my a proper GUI with QT5!
 
 ### TODO
+- Add licenses
+- Add Python Requirements
+- Create a build
 - Fix the UI for adding the username, client id and the client secret so that it will save the information to the config.ini file
 - Fix different monitor resolution resizing problems
 - Improve the UI
