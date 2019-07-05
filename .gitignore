@@ -1,0 +1,6 @@
+config.ini
+.cache-*
+build
+.vscode
+__pycache__
+dist
