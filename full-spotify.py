@@ -84,7 +84,11 @@ class Fullscreen_Spotify(QMainWindow):
         
         if key == Qt.Key_Space:
             if self.spotify.is_playing_music is True:
-                self.spotify.pause_track()
+                try:
+                    self.spotify.pause_track()
+                except Exception:
+                    self.spotify.play_track()
+
             else:
                 self.spotify.play_track()
 

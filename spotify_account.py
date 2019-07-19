@@ -28,7 +28,7 @@ class Spotify:
         if os.path.isfile('config.ini'):
             config.read('config.ini',encoding='utf-8-sig')
 
-        self.token = util.prompt_for_user_token(config['SPOTIFY']['username'],'user-read-playback-state',config['SPOTIFY']['client_id'],config['SPOTIFY']['client_secret'],config['SPOTIFY']['redirect_uri'])
+        self.token = util.prompt_for_user_token(config['SPOTIFY']['username'],'user-read-playback-state user-modify-playback-state',config['SPOTIFY']['client_id'],config['SPOTIFY']['client_secret'],config['SPOTIFY']['redirect_uri'])
         
         if self.token:
             #Spotify Login
